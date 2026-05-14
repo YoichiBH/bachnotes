@@ -1,16 +1,47 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center p-6 border-b border-zinc-800">
+    <header className="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur">
       
-      <h1 className="text-xl font-bold">
-        BachNotes
-      </h1>
+      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        
+        {/* LOGO */}
+        <Link
+          href="/"
+          className="text-xl font-bold tracking-tight hover:opacity-80 transition"
+        >
+          BachNotes
+        </Link>
 
-      <input
-        placeholder="Buscar..."
-        className="bg-zinc-900 px-4 py-2 rounded-xl"
-      />
+        {/* NAVEGACIÓN */}
+        <nav className="flex items-center gap-6 text-sm text-zinc-400">
+          
+          <Link
+            href="/"
+            className="hover:text-white transition"
+          >
+            Inicio
+          </Link>
 
-    </nav>
+          <Link
+            href="/apuntes"
+            className="hover:text-white transition"
+          >
+            Apuntes
+          </Link>
+
+          <Link
+            href="/examenes"
+            className="hover:text-white transition"
+          >
+            Exámenes
+          </Link>
+
+        </nav>
+
+      </div>
+
+    </header>
   );
 }

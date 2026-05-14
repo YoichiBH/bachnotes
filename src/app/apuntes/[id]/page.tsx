@@ -77,27 +77,6 @@ export default function ApuntePage({ params }: any) {
 
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
-      
-      {/* NAVBAR SUPERIOR */}
-      <header className="border-b border-zinc-800">
-        <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-
-          <Link
-            href="/"
-            className="text-lg font-semibold hover:opacity-80 transition"
-          >
-            BachNotes
-          </Link>
-
-          <Link
-            href="/apuntes"
-            className="text-sm text-zinc-400 hover:text-white transition"
-          >
-            ← Volver a apuntes
-          </Link>
-
-        </div>
-      </header>
 
       {/* CONTENIDO */}
       <section className="max-w-3xl mx-auto px-6 py-16">
